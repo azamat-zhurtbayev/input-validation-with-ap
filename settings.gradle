@@ -1,0 +1,4 @@
+rootProject.name = 'input-validation-with-ap'
+
+include 'input-validation-api'
+include 'input-validation-generator'

@@ -1,0 +1,24 @@
+buildscript {
+  ext {
+    lombokVersion = '1.18.10'
+    javapoetVersion = '1.11.1'
+  }
+}
+
+plugins {
+  id 'java'
+}
+
+repositories {
+  mavenCentral()
+  mavenLocal()
+}
+
+version '0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+dependencies {
+  compile project(":input-validation-api")
+  compile "org.projectlombok:lombok:${lombokVersion}"
+  compile "com.squareup:javapoet:${javapoetVersion}"
+}
